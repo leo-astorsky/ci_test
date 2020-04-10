@@ -7,6 +7,7 @@ steps:
   commands:
   - pip install -r requirements.txt
   - pytest
+  - ls > msg.txt
 
 - name: send telegram notification
   image: appleboy/drone-telegram
@@ -15,3 +16,4 @@ steps:
       from_secret: bot_token
     to:
       from_secret: tg_l2_user_id
+   message_file: msg.txt
