@@ -16,4 +16,4 @@ steps:
       from_secret: bot_token
     to:
       from_secret: tg_l2_user_id
-   message_file: msg.txt
+    message_file: msg.txt
