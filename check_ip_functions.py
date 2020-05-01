@@ -2,7 +2,6 @@ import ipaddress
 
 
 def check_ip(ip):
-    #return False
     try:
         ipaddress.ip_address(ip)
         return True
