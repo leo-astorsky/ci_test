@@ -35,3 +35,9 @@ jobs:
       run: |
         pip install pytest
         pytest
+    
+    - name: tg message
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.tg_l2_user_id }}
+        token: ${{ secrets.bot_token }}
