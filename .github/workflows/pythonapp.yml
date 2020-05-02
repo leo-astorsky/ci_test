@@ -40,4 +40,4 @@ jobs:
       uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.tg_l2_user_id }}
-        token: ${{ secrets.bot_token }}
+        token: ${{ secrets.tg_bot_token }}
